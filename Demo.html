@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        figure {
+  position: relative;
+}
+ 
+figure:before,
+figure:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+ 
+img {
+  width: 70%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+}
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" value="Ấn vào đây đi vui lắm!" style="background-color: red; color: white;">
+    <div id="ahihi" style="color: red;"></div>
+    <figure id="fig">
+        <img src="https://chiase24.com/wp-content/uploads/2019/06/H%C3%ACnh-%E1%BA%A3nh-m%C3%A8o-con-kitty-%C4%91%E1%BA%B9p-d%E1%BB%85-th%C6%B0%C6%A1ng-1.jpg">
+    </figure>
+    
+    <script language="javascript">
+        // Code JS tại đây
+        var button1 = document.getElementById("btn1");
+        var img = document.getElementById("fig");
+        var ahi = document.getElementById("ahihi");
+        button1.onclick = function(){
+            img.innerHTML = '<img src="https://c.tenor.com/OWqCMKoDF0MAAAAC/sadako-samara.gif">';
+            ahi.innerHTML = 'Ahihi!!';
+        }
+    </script>
+</body>
+</html>
